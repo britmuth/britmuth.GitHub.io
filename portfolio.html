@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>B. Muth</title>
+<style>
+h1{ font-family: 'Courgette', cursive;
+	font-size: 75px;
+	margin-top: -10px;}
+
+.hFont{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "Lucida Grande", "Helvetica Nueue", Arial, sans-serif;
+	color: #FFF}
+	
+nav {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    display: block;
+    margin-top: -48px;
+    overflow: hidden;
+	width: 98%;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+    display: inline-block;
+    list-style-type: none;
+    transition: all 0.2s;
+}
+
+nav > ul > li > a {
+    color: #aaa;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+
+}
+
+nav li > ul{
+    display : none;
+    margin-top:1px;
+    background-color: #bbb;
+
+}
+
+nav li > ul li{
+    display: block;
+}
+
+nav  li > ul li a {
+    color: #111;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #666;
+}
+
+nav li:hover > ul{
+    position:absolute;
+    display : block;
+}
+
+p{font-family: 'Courgette', cursive;}
+
+p2 {font-family: 'Courgette', cursive;
+	position: absolute;
+	right: 40px;
+	top: 15px;
+	text-align: left;}
+
+.lax {
+		-ms-transform: rotate(90deg); /* IE 9 */
+    	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+     	transform: rotate(90deg);
+		position: absolute;
+    	top: 300px;
+    	left: 0px;
+    	width: 500px;
+		float: left;
+		margin: 0 0 10px 10px;
+		z-index: -1;}
+	
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+<h1> Britney Muth </h1>
+
+<nav>
+    <ul>
+        <li>
+            <a href="portfolio.html"><div class = "hFont"> Home </div></a>
+        </li>
+        <li>
+            <a><div class = "hFont"> Contact </div> </a>
+            <ul> <div class = "hFont">
+                <li><a>MuthBritney@Gmail.com</a></li>
+                <li><a>(978)-996-5732</a></li>
+                </div>
+            </ul>
+        </li>
+        <li><a href="blog.html"> <div class = "hFont"> Blog </div> </a></li>
+    </ul>
+</nav>
+
+<p2>“Go deep and it will serve you when you <br>
+make your choices about where you want to <br>
+leave your mark.” - Samantha Power
+</p2>
+
+<img src = "lax.jpg" class = "lax"/>
+
+</body>
+
+</html>

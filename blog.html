@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>B. Muth </title>
+<meta charset="utf-8">
+<style>
+	body {
+    background-image: url("background2.JPG"); 
+	no-repeat center center fixed;
+	no-repeat top top fixed;
+	no-repeat right right fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+	
+	h1 {
+		font: 400 100px/1.3 'Arizonia', Helvetica, sans-serif;
+  		color: #2A3143;
+  		text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+		line-height:20px;
+		position: relative;
+		left: 150px;
+
+	}
+	.jainz {
+		-ms-transform: rotate(90deg); /* IE 9 */
+    	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+     	transform: rotate(90deg);
+		border: 20px solid #2A3143;
+		position: absolute;
+    	top: 220px;
+    	right: 0px;
+    	width: 500px;
+		float: right;
+		margin: 0 0 10px 10px;
+	}
+
+	.mytext {
+		float: left;
+		padding-right: 600px;
+		margin: 0;
+		font-family: 'Coustard', serif;
+		color: #2A3143;
+	}
+	
+	.p1 {
+		font: 400 32px/1.3 'Arizonia', Helvetica, sans-serif, bold;
+  		color: #2A3143;
+  		text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+		line-height:20px;
+		position: relative;
+		left: 150px;
+	}
+	
+	.inset{
+		display:block;width:100px;height:100px;border-radius:50px;font-size:20px; color:#2A3144;line-height:100px;text-shadow:0 1px 0 #666;text-align:center;text-decoration:none;box-shadow:1px 1px 2px #000;background:#96BFB7;opacity:0.95}
+		.inset:hover{color:2A3144;text-shadow:0 0 1px #666;text-decoration:none;box-shadow:0 0 4px #222 inset;opacity:1}
+	
+	.sidebar {
+    position:absolute;
+    top:0; bottom:0; left:0;
+    width:150px;
+    background:#FFF;
+	opacity: 0.5;
+	}
+</style>
+
+<script type="text/javascript">
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "jainz.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "tiff.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "mel.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "thets.jpg"
+
+</script>
+
+</head>
+
+<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet"> 
+
+<body>
+<div class = "sidebar"></div>
+
+<img src = "jainz.JPG" class = "jainz" id = "slide" />
+
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<3)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+
+</script>
+
+<h1> Britney Muth</h1>
+<div class = "mytext"> 
+<div class = "p1"> "Life is what happens to you while you're busy making <br> other plans." - John Lennon </div>
+<br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>
